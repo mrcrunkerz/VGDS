@@ -11,6 +11,13 @@
   box-sizing: inherit;
 }
 
+html,
+body {
+  scroll-behavior: smooth;
+  width: 100%;
+  box-sizing: border-box;
+}
+
 body {
   font-family: Poppins, sans-serif;
   font-weight: 400;
@@ -35,6 +42,12 @@ body {
 .btn-main:hover {
   color: #000;
   background-color: #fff;
+}
+
+.secondry-heading {
+  font-size: 2rem;
+  margin: 1rem 0 3rem 0;
+  text-align: center;
 }
 
 @font-face {
@@ -67,6 +80,56 @@ body {
   font-size: 1.2rem;
   font-weight: 300;
   color: #f3c11b;
+}
+
+.gallery-section {
+  background-color: #000;
+  width: 100%;
+  padding: 3rem;
+  color: #fff;
+}
+.gallery-section-grid {
+  column-count: 4;
+  column-gap: 1rem;
+  width: 100%;
+}
+.gallery-section-item {
+  position: relative;
+  break-inside: avoid;
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+.gallery-section-item img {
+  width: 100%;
+  display: block;
+  border-radius: 0.4rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s;
+}
+.gallery-section-popup {
+  display: none;
+  background-color: #fff;
+  color: #000;
+  padding: 1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  transition: all 0.4s;
+}
+.gallery-section-popup .close-popup {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2rem;
+}
+.gallery-section .gallery-section-toggle:checked + .gallery-section-thumb + .gallery-section-popup {
+  display: flex;
 }
 
 /*# sourceMappingURL=style.css.map */

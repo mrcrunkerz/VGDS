@@ -33,3 +33,60 @@
     }
   }
 }
+
+.gallery-section {
+  background-color: variable.$black;
+  width: 100%;
+  padding: 3rem;
+  color: variable.$white;
+
+  &-grid {
+    column-count: 4;
+    column-gap: 1rem;
+    width: 100%;
+  }
+
+  &-item {
+    position: relative;
+    break-inside: avoid;
+    margin-bottom: 1.5rem;
+    width: 100%;
+
+    img {
+      width: 100%;
+      display: block;
+      border-radius: 0.4rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s;
+    }
+  }
+  &-popup {
+    display: none;
+    background-color: variable.$white;
+    color: variable.$black;
+    padding: 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    transition: all 0.4s;
+
+    .close-popup {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      font-size: 2rem;
+    }
+  }
+
+  .gallery-section-toggle:checked
+    + .gallery-section-thumb
+    + .gallery-section-popup {
+    display: flex; // or block if you prefer
+  }
+}
