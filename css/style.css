@@ -152,7 +152,10 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.gallery-section .gallery-section-toggle:checked + .gallery-section-thumb + .gallery-section-popup {
+.gallery-section
+  .gallery-section-toggle:checked
+  + .gallery-section-thumb
+  + .gallery-section-popup {
   display: block;
 }
 
