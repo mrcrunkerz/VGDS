@@ -1,0 +1,35 @@
+@use "../home/variable";
+@font-face {
+  font-family: "against-regular", sans-serif;
+  src: url(Fonts/against-regular.otf) format("truetype");
+  font-display: swap;
+}
+.header-section {
+  height: 100vh;
+  width: 100%;
+  background-color: variable.$black;
+  color: variable.$white;
+  position: relative;
+
+  &-title {
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    &-main {
+      font-family: "against-regular", serif;
+      font-size: 2.5rem;
+      color: variable.$primary-color;
+    }
+
+    &-sub {
+      font-family: Poppins, sans-serif;
+      text-transform: uppercase;
+      font-size: 1.2rem;
+      font-weight: 300;
+      color: variable.$primary-color;
+    }
+  }
+}

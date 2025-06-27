@@ -1,0 +1,15 @@
+{
+  "name": "vgds",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass scss/main.scss css/style.css -w"
+  },
+  "keywords": [],
+  "author": "Verakumar Kalaisivam",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "sass": "^1.89.2"
+  }
+}
