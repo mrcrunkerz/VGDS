@@ -39,7 +39,7 @@ body {
 
 @font-face {
   font-family: "against-regular", sans-serif;
-  src: url(Fonts/against-regular.otf) format("truetype");
+  src: url(../../Fonts/against-regular.otf) format("opentype");
   font-display: swap;
 }
 .header-section {
