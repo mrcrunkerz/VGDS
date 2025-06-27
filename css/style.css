@@ -44,6 +44,21 @@ body {
   background-color: #fff;
 }
 
+.whatsapp-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.8rem 1.6rem;
+  background-color: #25d366;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: all 0.3s;
+}
+.whatsapp-btn:hover {
+  background-color: #1ebe5d;
+}
+
 .secondry-heading {
   font-size: 2rem;
   margin: 1rem 0 3rem 0;
@@ -112,14 +127,17 @@ body {
   color: #000;
   padding: 1rem;
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  height: 80%;
+  border-radius: 0.2rem;
+  box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.8);
   text-align: center;
   justify-content: center;
   align-items: center;
   z-index: 10;
+  transform: translate(-50%, -50%);
   transition: all 0.4s;
 }
 .gallery-section-popup .close-popup {
@@ -128,8 +146,14 @@ body {
   right: 1rem;
   font-size: 2rem;
 }
+.gallery-section-popup .message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 .gallery-section .gallery-section-toggle:checked + .gallery-section-thumb + .gallery-section-popup {
-  display: flex;
+  display: block;
 }
 
 /*# sourceMappingURL=style.css.map */
