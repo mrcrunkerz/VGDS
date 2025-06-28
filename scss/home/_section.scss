@@ -68,8 +68,8 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 80%;
-    height: 80%;
+    width: 95%;
+    height: 90%;
     border-radius: 0.2rem;
     box-shadow: 0 1.5rem 2rem rgba(variable.$black, 0.8);
     text-align: center;
@@ -91,6 +91,10 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+    }
+
+    p {
+      font-size: 0.8rem;
     }
   }
 

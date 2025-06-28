@@ -47,10 +47,11 @@ body {
 .whatsapp-btn {
   display: inline-block;
   margin-top: 1rem;
-  padding: 0.8rem 1.6rem;
+  padding: 0.4rem 0.6rem;
   background-color: #25d366;
   color: #fff;
   text-decoration: none;
+  font-size: 0.6rem;
   font-weight: bold;
   border-radius: 5px;
   transition: all 0.3s;
@@ -129,8 +130,8 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 80%;
-  height: 80%;
+  width: 95%;
+  height: 90%;
   border-radius: 0.2rem;
   box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, 0.8);
   text-align: center;
@@ -152,10 +153,10 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.gallery-section
-  .gallery-section-toggle:checked
-  + .gallery-section-thumb
-  + .gallery-section-popup {
+.gallery-section-popup p {
+  font-size: 0.8rem;
+}
+.gallery-section .gallery-section-toggle:checked + .gallery-section-thumb + .gallery-section-popup {
   display: block;
 }
 
